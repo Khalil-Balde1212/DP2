@@ -1,0 +1,26 @@
+Arduino master:
+//I2C connection
+A4 = SDA
+A5 = SCL
+
+//sensors
+A0 = AccelTest
+A1 = AccelZ
+A2 = AccelY
+A4 = AccelX
+
+D2 = enc1 CLK
+D3 = enc1 DT
+
+D4 = enc2 CLK
+D5 = enc2 DT
+
+D6 = enc3 CLK
+D7 = enc3 DT
+
+D8 = Distance1 ECHO
+D9 = Distance1 TRIG
+
+D10 = Distance2 ECHO
+D11 = Distance2 TRIG
+
