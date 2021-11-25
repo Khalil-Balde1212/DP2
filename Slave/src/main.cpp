@@ -29,7 +29,17 @@ void loop() {
 // function that executes whenever data is requested by master
 // this function is registered as an event, see setup()
 void requestEvent() {
-  	Wire.write("PP"); // respond with message of 6 bytes
+  	Wire.write(convertBinary); // respond with message of 6 bytes
 	Serial.println("Sending...");
   // as expected by master
+}
+int convertBinary(int first, int second, int third) {
+    int answer = 0;
+    answer += first;
+    answer = answer << 9;
+    answer += second;
+    answer = answer << 9;
+    answer += third;
+
+    return answer;
 }
